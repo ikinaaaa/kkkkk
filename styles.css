@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scrollbar-color: #3D2760;
+    background-size: cover;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   }
+@font-face {
+    font-family: 'Magz';
+    src: url(fonts/Magz.otf);
+}
+mark{
+    background-color: var(--brown);
+}
+:root{
+--lightbrown: #C59E72;
+--purple: #3D2760;
+--lightpurple: #B192C1;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 700vh;
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.19fr 0.81fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "intro"
+    "about"
+    "roadmap1"
+    "roadmap2"
+    "tokenomics"
+    "howtobuy"
+    "footer";
+    background-color: #3D2760;
+    background-image: url(images/beerus-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Magz';
+}
+header{
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav;
+    gap: 5%;
+}
+.nav-element{
+    width: 10%;
+    height: auto;
+    text-align: center;
+    font-size: 150%;
+}
+a {
+    text-decoration: none;
+}
+nav p {
+    color: var(--lightbrown);
+}
+nav p:hover {
+    cursor: pointer;
+    color: var(--lightpurple);
+}
+.nav-logo-img{
+    width: 100%;
+    height: 100%;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    grid-area: intro;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 45%;
+    height: 65%;
+}
+.chart-btn, .buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/btn-img.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 12%;
+    color: white;
+}
+.chart-btn:hover{
+    cursor: pointer;
+    color: var(--purple);
+    background-size: 90%;
+}
+.buy-btn:hover{
+    cursor: pointer;
+    color: var(--purple);
+    background-size: 90%;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    grid-area: about;
+    padding-left: 12%;
+    padding-bottom: 4%;
+}
+.about-text-container{
+    width: 45%;
+    height: 70%;
+}
+.text{
+    width: 100%;
+    height: 90%;
+}
+.text p{
+    color: white;
+    font-size: 280%;
+}
+.contract{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    gap: 2%;
+}
+.contract-ca{
+}
+.contract-ca p{
+    color: white;
+    font-size: 200%;
+}
+.contract-text{
+}
+.contract-text p{
+    color: white;
+    font-size: 150%;
+}
+.contract-btn{
+    width: 10%;
+    height: 100%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/copy-btn.png);
+}
+.contract-btn:hover{
+    cursor: pointer;
+    background-size: 95%;
+    background-image: url(images/copy-btn-after.png);
+}
+#roadmap1{
+    grid-area: roadmap1;
+}
+#roadmap2{
+    grid-area: roadmap2;
+}
+#tokenomics{
+    grid-area: tokenomics;
+}
+#howtobuy{
+    grid-area: howtobuy;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    grid-area: footer;
+}
+.end-container{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+.end-nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.end-nav p{
+    font-size: 120%;
+    color: white;
+}
+.end-nav p:hover{
+    color: var(--lightpurple);
+}
+.end-socials-arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 5%;
+}
+.end-socials{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.tg-img{
+    width: 15%;
+    height: 30%;
+    background-image: url(images/tg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tg-img:hover{
+    cursor: pointer;
+    background-image: url(images/tg-img-after.png);
+}
+.tw-img{
+    width: 15%;
+    height: 30%;
+    background-image: url(images/tw-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tw-img:hover{
+    cursor: pointer;
+    background-image: url(images/tw-img-after.png);
+}
+.end-arrow{
+    width: 10%;
+    height: 95%;
+    background-image: url(images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.end-arrow:hover{
+    cursor: pointer;
+    background-image: url(images/arrow-after.png);
+}
+
+
